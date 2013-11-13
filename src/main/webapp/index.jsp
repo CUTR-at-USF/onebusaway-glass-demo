@@ -69,7 +69,9 @@ limitations under the License.
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="#">Glassware Starter Project: Java Edition</a>
+    	<img class="button-icon" src="<%= appBaseUrl +
+               "static/images/OneBusAway_icon.png" %>" align="left">
+      <a class="brand" href="#">OneBusAway Glassware Demo</a>
     </div>
   </div>
 </div>

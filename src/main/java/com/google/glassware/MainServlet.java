@@ -73,16 +73,29 @@ public class MainServlet extends HttpServlet {
   public static final String CONTACT_NAME = "Java Quick Start";
 
   private static final String PAGINATED_HTML =
-      "<article class='auto-paginate'>"
-      + "<h2 class='blue text-large'>Did you know...?</h2>"
-      + "<p>Cats are <em class='yellow'>solar-powered.</em> The time they spend napping in "
-      + "direct sunlight is necessary to regenerate their internal batteries. Cats that do not "
-      + "receive sufficient charge may exhibit the following symptoms: lethargy, "
-      + "irritability, and disdainful glares. Cats will reactivate on their own automatically "
-      + "after a complete charge cycle; it is recommended that they be left undisturbed during "
-      + "this process to maximize your enjoyment of your cat.</p><br/><p>"
-      + "For more cat maintenance tips, tap to view the website!</p>"
-      + "</article>";
+      "<article> <section> <table class=\"text-small\"> <tbody> <tr> <td>" +
+    		  "<b>5</b> - N. to University Area TC</td>" + 
+    		  "<td><div class=\"text align-right\" style=\"color :" + 
+    		  " green;\">in <b>5</b> min</div>" + 
+    		  "</td></tr>" + 
+    		  "<tr><td>" + 
+    		  "<b>15</b> - S. to Westshore TC</td>" +
+    		  "<td><div class=\"text align-right muted\" style=\"color :" + 
+    		  " green;\">in <b>7</b> min</div>" +
+    		  "</td></tr>" +
+    		  "<tr><td>" +
+    		  "<b>400</b> - S. to Downtown</td>" +
+    		  "<td><div class=\"align-right muted \" style=\"color :" + 
+    		  " red;\">in <b>16</b> min</div>" +
+    		  "</td></tr>" +
+    		  "<tr><td>" +
+    		  "<b>24</b> - E. to Netpark TC</td>" +
+    		  "<td><div class=\"align-right muted\">in" + 
+    		  " <b>21</b> min</div>" +
+    		  "</td></tr></tbody></table></section><footer>" +
+    		  "<img src=\"https://mirror-api-playground.appspot.com/links/icons_30_0025_geo_transit.png\" class=\"left\">" +
+    		  "<p>Alumni Dr. @ Laurel Dr</p>" +
+    		  "</footer></article>";
 
   /**
    * Do stuff when buttons on index.jsp are clicked
