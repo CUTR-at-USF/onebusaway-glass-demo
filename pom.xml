@@ -17,8 +17,8 @@ limitations under the License.
 -->
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.google</groupId>
-  <artifactId>glass-java-starter</artifactId>
+  <groupId>edu.usf.cutr</groupId>
+  <artifactId>onebusaway-glass-demo</artifactId>
   <version>0.1-SNAPSHOT</version>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
