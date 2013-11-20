@@ -159,49 +159,17 @@ limitations under the License.
 
   <div class="row">
     <div class="span4">
-      <h2>Timeline</h2>
+      <h2>OneBusAway</h2>
 
       <p>When you first sign in, this Glassware inserts a welcome message. Use
         these controls to insert more items into your timeline. Learn more
         about the timeline APIs
         <a href="https://developers.google.com/glass/timeline">here</a>.</p>
 
-
-      <form action="<%= WebUtil.buildUrl(request, "/main") %>" method="post">
-        <input type="hidden" name="operation" value="insertItem">
-        <textarea class="span4" name="message">Hello World!</textarea><br/>
-        <button class="btn btn-block" type="submit">
-          Insert the above message
-        </button>
-      </form>
-
-      <form action="<%= WebUtil.buildUrl(request, "/main") %>" method="post">
-        <input type="hidden" name="operation" value="insertItem">
-        <input type="hidden" name="message" value="Chipotle says 'hi'!">
-        <input type="hidden" name="imageUrl" value="<%= appBaseUrl +
-               "static/images/chipotle-tube-640x360.jpg" %>">
-        <input type="hidden" name="contentType" value="image/jpeg">
-
-        <button class="btn btn-block" type="submit">Insert a picture
-          <img class="button-icon" src="<%= appBaseUrl +
-               "static/images/chipotle-tube-640x360.jpg" %>">
-        </button>
-      </form>
       <form action="<%= WebUtil.buildUrl(request, "/main") %>" method="post">
         <input type="hidden" name="operation" value="insertPaginatedItem">
         <button class="btn btn-block" type="submit">
-          Insert a card with long paginated HTML</button>
-      </form>
-      <form action="<%= WebUtil.buildUrl(request, "/main") %>" method="post">
-        <input type="hidden" name="operation" value="insertItemWithAction">
-        <button class="btn btn-block" type="submit">
-          Insert a card you can reply to</button>
-      </form>
-      <hr>
-      <form action="<%= WebUtil.buildUrl(request, "/main") %>" method="post">
-        <input type="hidden" name="operation" value="insertItemAllUsers">
-        <button class="btn btn-block" type="submit">
-          Insert a card to all users</button>
+          Insert a sample OneBusAway card</button>
       </form>
     </div>
 
