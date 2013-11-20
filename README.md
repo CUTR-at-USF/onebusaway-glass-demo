@@ -31,6 +31,10 @@ You can package this project as a WAR file for deployment to a web servlet conta
 
 This will produce a WAR file in the `/target` directory.
 
+## Troubleshooting
+
+If you get oauth errors when deploying to Tomcat, try shutting down and restarting Tomcat.  Sometimes on initial deployment Tomcat doesn't seem to load the oauth libraries correctly.
+
 ## License
 Code for this project is licensed under [APL 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 and content is licensed under the
