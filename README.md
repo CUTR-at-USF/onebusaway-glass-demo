@@ -21,12 +21,15 @@ client_secret=SDIOJ#39v@Bv9@WHF
 ## Execution
 
 You can start this project running in Jetty on `localhost` using the command:
+
 `mvn clean jetty:run`
 
 ## Packaging
 
 You can package this project as a WAR file for deployment to a web servlet container (e.g., Tomcat) using the commands:
+
 `mvn clean compile`
+
 `mvn war:war`
 
 This will produce a WAR file in the `/target` directory.
