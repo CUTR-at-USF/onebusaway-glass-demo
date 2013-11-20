@@ -1,9 +1,10 @@
-Google Mirror API's Quickstart for Java
+OneBusAway Glass demo
 ========================
 
-The documentation for this quickstart is maintained on developers.google.com.
-Please see here for more information:
-https://developers.google.com/glass/quickstart/java
+This project is a demo to display OneBusAway real-time information on Google Glass.
+
+See the issue on the main OneBusAway server project for details:
+https://github.com/OneBusAway/onebusaway-application-modules/issues/60
 
 ## License
 Code for this project is licensed under [APL 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
