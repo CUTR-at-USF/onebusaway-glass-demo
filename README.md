@@ -20,7 +20,7 @@ client_secret=SDIOJ#39v@Bv9@WHF
 
 ## Execution
 
-You can start this project running in Jetty on `localhost` using the command:
+You can start this project running in Jetty on `localhost:8080` using the command:
 
 `mvn clean jetty:run`
 
