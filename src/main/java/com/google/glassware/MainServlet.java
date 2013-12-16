@@ -69,8 +69,8 @@ public class MainServlet extends HttpServlet {
   }
 
   private static final Logger LOG = Logger.getLogger(MainServlet.class.getSimpleName());
-  public static final String CONTACT_ID = "com.google.glassware.contact.java-quick-start";
-  public static final String CONTACT_NAME = "Java Quick Start";
+  public static final String CONTACT_ID = "org.onebusaway.glassware.contact.glass-demo";
+  public static final String CONTACT_NAME = "OBA Glass";
 
   private static final String PAGINATED_HTML =
       "<article> <section> <table class=\"text-small\"> <tbody> <tr> <td>" +
