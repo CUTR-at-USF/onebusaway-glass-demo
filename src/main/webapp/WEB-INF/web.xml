@@ -80,4 +80,27 @@ limitations under the License.
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
+  <!-- SSL just for subscription URL
+  <security-constraint>
+  	<web-resource-collection>
+    	<web-resource-name>Handling subscription updates</web-resource-name>
+     	<url-pattern>/notify</url-pattern>
+	</web-resource-collection>
+  	<user-data-constraint>
+    	<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+  	</user-data-constraint>
+  </security-constraint>
+  -->
+  	
+  	<!-- SSL for everything -->
+	<security-constraint>
+    	<web-resource-collection>
+        	<web-resource-name>securedapp</web-resource-name>
+        	<url-pattern>/*</url-pattern>
+    	</web-resource-collection>
+    	<user-data-constraint>
+	        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    	</user-data-constraint>
+	</security-constraint>  
 </web-app>
