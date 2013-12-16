@@ -61,15 +61,27 @@ public class NewUserBootstrapper {
 
     try {
       // Subscribe to timeline updates
-      Subscription subscription =
+      Subscription timelineSubscription =
           MirrorClient.insertSubscription(credential, WebUtil.buildUrl(req, "/notify"), userId,
               "timeline");
-      LOG.info("Bootstrapper inserted subscription " + subscription
+      LOG.info("Bootstrapper inserted subscription " + timelineSubscription
           .getId() + " for user " + userId);
     } catch (GoogleJsonResponseException e) {
       LOG.warning("Failed to create timeline subscription. Might be running on "
           + "localhost. Details:" + e.getDetails().toPrettyString());
     }
+    
+    try {
+        // Subscribe to location updates
+        Subscription locationSubscription =
+            MirrorClient.insertSubscription(credential, WebUtil.buildUrl(req, "/notify"), userId,
+                "locations");
+        LOG.info("Bootstrapper inserted subscription " + locationSubscription
+            .getId() + " for user " + userId);
+      } catch (GoogleJsonResponseException e) {
+        LOG.warning("Failed to create location subscription. Might be running on "
+            + "localhost. Details:" + e.getDetails().toPrettyString());
+      }
 
     // Send welcome timeline item
     TimelineItem timelineItem = new TimelineItem();
